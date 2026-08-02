@@ -1,3 +1,9 @@
+/*WAP to create a calculator class to add two numbers.
+use constructor overloading.....
+Name:Shaikh Faiza Noor Mohd Israr
+uin:251P141/68
+Class:S.E Comps Div:A */
+
 public class Calculator {
     int a;
     int b;
@@ -19,6 +25,6 @@ public class Calculator {
     }
     void add(double i,double j){
         double sum=i+j;
-        System.out.println("Add Double:"+sum);
+        System.out.println("Add Double:"+sum );
     }
 }
