@@ -1,0 +1,29 @@
+public class Employee extends Person {
+
+    private String designation;
+    private int employeeId;
+    private int salary;
+    private int experience;
+
+    Employee(String name, int age, String gender, String mobile,
+             String designation, int employeeId, int salary,
+             int experience) {
+
+        super(name, age, gender, mobile);
+
+        this.designation = designation;
+        this.employeeId = employeeId;
+        this.salary = salary;
+        this.experience = experience;
+    }
+
+    void display() {
+
+        super.display();
+
+        System.out.println("Employee Id :" + employeeId);
+        System.out.println("Salary:" + this.salary);
+        System.out.println("Experience:" + this.experience);
+        System.out.println("Designation:" + designation);
+    }
+}
