@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+    background: #eef2ff;
+}
+
+nav {
+    background: #172554;
+    padding: 20px;
+}
+
+nav * {
+    color: white;
+    margin: 10px;
+}
+
+section {
+    padding: 35px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+input, textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+}
+
+button {
+    padding: 10px 25px;
+    background: #2563eb;
+    color: white;
+    border: 0;
+}
