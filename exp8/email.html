@@ -1,0 +1,54 @@
+<!--Name:Shaikh Faiza Noor Mohd Israr
+UIN:251p141/68 comps(A)
+AIM:Wap to create a web page that accepts an email address from 
+the user and validates it's format using JavaScript. display and
+ appropriate success or error message without reloading the page
+-->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+
+<body>
+
+    <input type="text" id="emailid">
+
+    <button onclick="validateEmail()">Validate</button>
+
+    <div id="success" style="color: green; display: none;">
+        Congratulations!!!<br>
+        You have entered a correct email.
+    </div>
+
+    <div id="error" style="color: darkred; display: none;">
+        Oops!!!<br>
+        Entered email is invalid.
+    </div>
+
+    <script>
+        function validateEmail() {
+
+            const emailElement = document.querySelector("#emailid");
+            let email = emailElement.value;
+
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            const success = document.querySelector("#success");
+            const error = document.querySelector("#error");
+
+            if (emailRegex.test(email)) {
+                success.style.display = "block";
+                error.style.display = "none";
+            }
+            else {
+                success.style.display = "none";
+                error.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
