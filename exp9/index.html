@@ -1,0 +1,50 @@
+<!--Name:Shaikh Faiza Noor Mohd Israr
+UIN:251P141/68 comps(A)-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Color Changer</title>
+
+    <style>
+        body {
+            text-align: center; font-family: Arial, sans-serif;
+            padding-top: 150px;
+            transition: background-color 5s;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Site</h1>
+    <h2>Shaikh Faiza </h2>
+    <p>Background color changes every 5 seconds</p>
+
+    <script>
+        let colors = ["lightblue","lightgreen","lightpink",
+            "lavender","lightyellow","peachpuff","lightcyan",
+            "lightsalmon","plum","lightgray"
+        ];
+
+        let i = 0;
+
+        setInterval(function() {
+            document.body.style.backgroundColor = colors[i];
+            i++;
+
+            if (i == colors.length) {
+                i = 0;
+            }
+        }, 5000);
+    </script>
+
+</body>
+</html>
